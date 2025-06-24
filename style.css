@@ -1,0 +1,516 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body h1,
+h3 {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+body p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #4da8da;
+  width: 100%;
+  /* position: fixed;
+  z-index: 1; */
+}
+
+.nav .log img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav .menuBar svg {
+  height: 30px;
+  width: 30px;
+  color: #ffd66b;
+  padding: 8px;
+  border: 1px solid #ffd66b;
+  border-radius: 10px;
+}
+
+.nav .menuBar svg:hover {
+  color: #4da8da;
+  background-color: #ffd66b;
+  transition: 100ms;
+}
+
+.nav .links {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding-right: 25%;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: capitalize;
+  width: max-content;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  height: 2px;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  background-color: whitesmoke;
+  transition: 100ms ease-in-out;
+}
+
+.link:hover {
+  color: whitesmoke;
+}
+
+.links a:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.sideMenuBar {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #ffd66b;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.page-link {
+  text-align: center;
+  color: #4da8da;
+  padding: 10px 30px;
+  width: 65px;
+  border: 1px solid #4da8da;
+  border-radius: 5px;
+}
+
+.page-link:hover {
+  background-color: #4da8da;
+}
+
+.sideMenuBar .menuButtons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.sideMenuBar .menuButtons .menuBtn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: 1px solid #4da8da;
+  color: aliceblue;
+  background-color: #4da8da;
+  text-transform: capitalize;
+}
+
+.sideMenuBar .menuButtons .signUp {
+  background-color: #f5f5f5;
+  color: #4da8da;
+}
+
+.sideMenuBar .menuButtons .menuBtn:hover {
+  background-color: #f5f5f5;
+  color: #4da8da;
+}
+
+.sideMenuBar .menuButtons .signUp:hover {
+  background-color: #dcdcdc;
+  color: #ffffff;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  padding-left: 20px;
+}
+
+.main .content {
+  padding-top: 15%;
+  grid-area: 1/1/2/2;
+}
+
+.main .mainImg {
+  grid-area: 1/2/2/3;
+  width: 100%;
+}
+
+.main .mainImg img {
+  width: 100%;
+}
+
+.main .mainImg .pc {
+  display: none;
+}
+
+.contentBtnDiv {
+  display: flex;
+  position: relative;
+  gap: 25px;
+}
+
+.contentBtn {
+  padding: 10px 35px;
+  text-transform: capitalize;
+  border: 1px solid #4da8da;
+  border-radius: 5px;
+  color: #4da8da;
+  background-color: transparent;
+  position: relative;
+}
+
+.book {
+  color: white;
+  background-color: #4da8da;
+}
+
+.book:hover {
+  color: white;
+  background-color: #5dc6ff;
+  transition: 300ms;
+}
+
+.join:hover {
+  color: white;
+  background-color: #4da8da;
+  transition: 300ms;
+}
+
+.works {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+  width: 98%;
+  background-color: #f0faff;
+}
+
+.works div {
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+
+.works .one1 {
+  display: flex;
+  width: inherit;
+  gap: 10px;
+}
+
+.works .one1 .one {
+  height: 450px;
+}
+
+.works .one1 p {
+  padding-top: 20px;
+}
+
+.works .one1 .two {
+  height: 450px;
+}
+
+.works .two2 {
+  display: flex;
+  gap: 100px;
+  height: 500px;
+  width: 90%;
+}
+
+.works .exmple {
+  background-color: #4da8da;
+  border: 1px solid #ffd66b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.works img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.works .two2 img {
+  height: 70%;
+}
+
+.works .two2 .four .imgFour {
+  background-image: url(img/album.png);
+  background-size: cover;
+  height: 400px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.works .two2 .four p {
+  padding-bottom: 20px;
+}
+
+.works .exmple p {
+  color: #ffffff;
+  text-align: justify;
+  padding: 5px;
+}
+
+.works .exmple button {
+  display: flex;
+  gap: 5px;
+  padding: 10px 35px;
+  border-radius: 5px;
+  border: 1px solid #ffd66b;
+  color: #4da8da;
+  background-color: #f0faff;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.works .exmple button:hover {
+  font-weight: bold;
+  background-color: #ffd66b;
+  color: white;
+ 
+  transition: 100ms ease-in-out;
+}
+
+.works .exmple a {
+  text-decoration: none;
+}
+
+.works .two2 .exmple a {
+  position: absolute;
+  bottom: 5px;
+}
+
+.marketing {
+  height: 200px;
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(56, 56, 56);
+}
+
+.contact {
+  text-align: center;
+  padding: 0 10%;
+  }
+
+.contact h1 {
+  font-family: "Roboto Flex", sans-serif;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.contact .total {
+  display: flex;
+  gap: 50px;
+}
+
+.contact .inputCard {
+  height: 450px;
+  width: 50%;
+  background-color: #b7e6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #ffd66b;
+}
+
+.contact .inputCard .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  gap: 10px;
+}
+
+.contact .inputCard input {
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #f0faff;
+  background-color: transparent;
+}
+
+.contact .inputCard .name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact .inputCard .inputs .full {
+  width: 95%;
+}
+
+.contact .inputCard .message {
+  margin-top: 30%;
+  margin-bottom: 30px;
+}
+
+.contact .inputCard button {
+  padding: 10px 35px;
+  color: #4da8da;
+  border: 1px solid #ffd66b;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.contact .inputCard button:hover {
+  background-color: #ffd66b;
+  color: white;
+  transition: 100ms ease-in-out;
+}
+
+.contact .sign {
+  height: 450px;
+  width: 50%;
+}
+
+.contact .sign img{
+  height: 100%;
+  width: 100%;
+}
+
+.footer{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #ffd66b;
+}
+
+.footer .icons{
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.footer .icons svg{
+    color: black;
+}
+
+.footer .icons svg:hover{
+  color: #4da8da;
+  transition: 100ms ease-in-out;
+}
+
+@media (min-width: 550px) {
+  .nav .menuBar {
+    display: none;
+  }
+
+  .main .mainImg .pc {
+    display: block;
+  }
+  .main .mainImg img {
+    width: 100%;
+  }
+
+  .nav .links {
+    display: flex;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .highLight img {
+    display: none;
+  }
+}
+
+@media (max-width: 549px) {
+  .sideMenuBar {
+    display: none;
+  }
+
+  .highLight {
+    position: relative;
+  }
+  .highLight img {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin-right: 0px;
+  }
+
+  .works {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    width: 98%;
+    background-color: black;
+  }
+
+  .works div {
+    height: 20%;
+    width: 50%;
+    padding: 10px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .works img {
+    height: 250px;
+    width: 100%;
+  }
+}
